@@ -1,0 +1,335 @@
+* {
+	margin: 0;
+	padding: 0;
+	font: 12pt Arial;
+}
+
+body {
+	background: #f8f8f8;
+	text-align: left;
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	color: #555;
+	font-size: 16px;
+	font-weight: 400;
+	padding-left: 0;
+	padding-right: 0;
+	height: 100%;	
+}
+#footer {
+ position:fixed;
+    bottom:0;
+    text-align: center;
+	margin-left: auto;
+	margin-right: auto;	
+	width: 100%;
+	left:auto;
+	right: auto;
+	background: #ededed;
+}
+
+.popUp {
+	width: 600px;
+	margin: 5px 5px 5px 5px;
+}
+
+.ui-dialog {
+	z-index: 500;
+}
+
+.register form {
+	width: 550px;
+	padding: 20px 50px 40px 50px;
+	margin-left: -150px;
+	background: #f8f8f8 url(../img/pattern.jpg) left top repeat;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	-moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3);
+	box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3);
+	text-align: center;
+}
+
+#form {
+	z-index: 100;
+}
+
+.register form h2 {
+	margin-bottom: 25px;
+	padding-bottom: 15px;
+	border-bottom: 2px dotted #bbb;
+	font-size: 30px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.red {
+	color: #eb4141;
+	border-bottom: 2px dotted #bbb;
+	font-size: 30px;
+	font-weight: 400;
+	margin-bottom: 25px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+.register form input {
+	width: 95%;
+	height: 30px;
+	background: #fcfcfc;
+	border: 1px solid #ddd;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1) inset;
+	-webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1) inset;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1) inset;
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	color: #888;
+	font-size: 16px;
+}
+
+.register form input:focus {
+	border: 1px solid #ccc;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.register form label {
+	margin: 7px 0 10px 5px;
+	font-size: 16px;
+	text-align: left;
+}
+
+.register form label span {
+	font-style: italic;
+}
+
+.register form input:-moz-placeholder {
+	color: #aaa;
+}
+
+.register form input:-ms-input-placeholder {
+	color: #aaa;
+}
+
+.register form input::-webkit-input-placeholder {
+	color: #aaa;
+}
+
+#submit {
+	cursor: pointer;
+	width: 40%;
+	height: 42px;
+	margin-top: 25px;
+	padding: 0;
+	background: #00b552;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 0;
+	-moz-box-shadow: 0 15px 30px 0 rgba(255, 255, 255, .1) inset;
+	-webkit-box-shadow: 0 15px 30px 0 rgba(255, 255, 255, .1) inset;
+	box-shadow: 0 15px 30px 0 rgba(255, 255, 255, .1) inset;
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #fff;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+	-o-transition: all .2s;
+	-moz-transition: all .2s;
+	-webkit-transition: all .2s;
+	-ms-transition: all .2s;
+}
+
+#cancel {
+	cursor: pointer;
+	width: 40%;
+	height: 42px;
+	margin-top: 25px;
+	padding: 0;
+	background: #eb4141;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 0;
+	-moz-box-shadow: 0 15px 30px 0 rgba(255, 255, 255, .1) inset;
+	-webkit-box-shadow: 0 15px 30px 0 rgba(255, 255, 255, .1) inset;
+	box-shadow: 0 15px 30px 0 rgba(255, 255, 255, .1) inset;
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #fff;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+	-o-transition: all .2s;
+	-moz-transition: all .2s;
+	-webkit-transition: all .2s;
+	-ms-transition: all .2s;
+}
+
+.register form button:hover {
+	-moz-box-shadow: 0 -15px 30px 0 rgba(255, 255, 255, .05) inset;
+	-webkit-box-shadow: 0 -15px 30px 0 rgba(255, 255, 255, .05) inset;
+	box-shadow: 0 -15px 30px 0 rgba(255, 255, 255, .05) inset;
+}
+
+.register form button:active {
+	-moz-box-shadow: 0 -15px 30px 0 rgba(255, 255, 255, .05) inset, 0 5px
+		8px 0 rgba(0, 0, 0, .1) inset;
+	-webkit-box-shadow: 0 -15px 30px 0 rgba(255, 255, 255, .05) inset, 0 5px
+		8px 0 rgba(0, 0, 0, .1) inset;
+	box-shadow: 0 -15px 30px 0 rgba(255, 255, 255, .05) inset, 0 5px 8px 0
+		rgba(0, 0, 0, .1) inset;
+}
+
+.header {
+	margin: 0 auto;
+	padding-bottom: 5px;
+	background: #f8f8f8 url(../img/pattern.jpg) left top repeat;
+	border-top: 3px solid #eb4141;
+	-moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3);
+	box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3);
+	padding-left: 0;
+	padding-right: 0;
+	height: 68px;
+}
+
+#header {
+	height: 68px;
+}
+
+.logo h1 {
+	font-family: 'Oleo Script', cursive;
+	margin: 0px;
+	padding: 5px 0px 0px 45px;
+}
+
+.logo h1 a {
+	color: #555;
+	font-family: 'Oleo Script', cursive;
+	font-size: 36px;
+	font-weight: 400;
+	color: #555;
+	height: 40px;
+	text-decoration: none;
+}
+
+.links {
+	text-align: right;
+}
+
+.field {
+	display: flex;
+	position: realtive;
+	margin: 1em auto;
+	width: 400px;
+	height: 50px;
+	float: left;
+	flex-direction: row;
+	box-shadow: 1px 1px 0 rgb(22, 160, 133), 2px 2px 0 rgb(22, 160, 133),
+		3px 3px 0 rgb(22, 160, 133), 4px 4px 0 rgb(22, 160, 133), 5px 5px 0
+		rgb(22, 160, 133), 6px 6px 0 rgb(22, 160, 133), 7px 7px 0
+		rgb(22, 160, 133);
+}
+
+.field>input[type=text], .field>button {
+	display: block;
+	font: 1.2em 'Montserrat Alternates';
+}
+
+.field>input[type=text] {
+	flex: 1;
+	padding: 0.6em;
+	border: 0.2em solid rgb(26, 188, 156);
+}
+
+.field>button {
+	padding: 0.6em 0.8em;
+	background-color: rgb(26, 188, 156);
+	color: white;
+	border: none;
+}
+
+#editButton {
+	
+}
+
+//
+Set text color
+.btn-primary, .btn-primary:hover, .btn-warning, .btn-warning:hover,
+	.btn-danger, .btn-danger:hover, .btn-success, .btn-success:hover,
+	.btn-info, .btn-info:hover, .btn-inverse, .btn-inverse:hover {
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
+	color: @white;
+}
+
+//
+Provide * some* extra contrast for those who can get it
+.btn-primary.active, .btn-warning.active, .btn-danger.active,
+	.btn-success.active, .btn-info.active, .btn-dark.active {
+	color: rgba(255, 255, 255, .85);
+}
+
+//
+Set the backgrounds
+
+
+.btn-primary { .buttonBackground (@primaryButtonBackground,
+	spin(@primaryButtonBackground, 20));
+	
+}
+
+.btn-warning { .buttonBackground (lighten(@orange, 15%), @orange);
+	
+}
+
+.btn-danger { .buttonBackground (#ee5f5b, #bd362f);
+	width: 60px;
+	height: 20px;
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	background: #eb4141;
+}
+
+.btn-success { .buttonBackground (#62c462, #51a351);
+	width: 60px;
+	height: 20px;
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	background: #00b552;
+}
+
+.btn-info { .buttonBackground (#5bc0de, #2f96b4);
+	
+}
+
+.btn-inverse { .buttonBackground (#454545, #262626);
+	
+}
+
+//
+Cross-browser Jank
+
+button.btn, input[type="submit"].btn { // Firefox 3.6 only I believe &:
+	:-moz-focus-inner {
+    padding : 0;
+	border: 0;
+}
+
+//
+IE7 has some default padding on button controls
+  * padding-top: 2px ; * padding-bottom: 2px ; &.large {
+	*padding-top: 7px;
+	*padding-bottom: 7px;
+}
+
+&
+.small {
+	*padding-top: 3px;
+	*padding-bottom: 3px;
+}
+}

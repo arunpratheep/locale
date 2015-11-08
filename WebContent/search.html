@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Locale</title>
+<link href="css/bootstrap.css" rel="stylesheet" />
+<link href="css/search.css" rel="stylesheet" />
+<link href="css/jquery.bootgrid.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="css/jquery.confirm/jquery.confirm.css" />
+
+<style>
+@
+-webkit-viewport {
+	width: device-width;
+}
+
+@
+-moz-viewport {
+	width: device-width;
+}
+
+@
+-ms-viewport {
+	width: device-width;
+}
+
+@
+-o-viewport {
+	width: device-width;
+}
+
+@
+viewport {
+	width: device-width;
+}
+
+body {
+	padding-top: 70px;
+}
+
+.column .text {
+	color: #f00 !important;
+}
+
+.cell {
+	font-weight: bold;
+}
+</style>
+</head>
+<body>
+	<header id="header" class="navbar navbar-default navbar-fixed-top">
+		<div class="header">
+			<div class="container">
+				<div class="row">
+					<div class="logo span4">
+						<h1>
+							<a href="">Locale</a>
+						</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+	<div class="container-fluid">
+
+		<div class="row">
+			<div class="col-md-6 visible-md visible-lg">
+				<div class="field" id="searchform">
+					<input type="text" id="searchterm" placeholder="Enter the Name to Search!" />
+					<button type="button" id="search">Find!</button>
+				</div>
+			</div>
+			<div class="col-md-6 visible-md visible-lg">
+				<div class="field" id="searchform" style="float: right">
+					<input type="text" id="searchterm1" placeholder="Enter the House Name to Search!" />
+					<button type="button" id="searchHouse">Find!</button>
+				</div>
+			</div>
+			<div class="col-md-12" id="Nametable">
+				<table id="grid" class="table table-condensed table-hover table-striped" data-selection="true" data-multi-select="false" data-row-select="true"
+					data-keep-selection="true">
+					<thead>
+						<tr>
+							<th data-column-id="id" data-identifier="true" data-type="numeric" data-header-css-class="column" data-align="left" data-width="7%	">Sl.No</th>
+							<th data-column-id="firstName" data-order="asc" data-align="left" data-header-css-class="column" data-header-align="left" data-width="14%">First
+								Name</th>
+							<th data-column-id="lastName" data-order="asc" data-align="left" data-header-css-class="column" data-header-align="left" data-width="14%">Last Name</th>
+							<th data-column-id="houseName" data-order="asc" data-align="left" data-header-css-class="column" data-header-align="left" data-width="14%">Hose Name</th>
+							<th data-column-id="fatherName" data-order="asc" data-align="left" data-header-css-class="column" data-header-align="left" data-width="14%">Father's
+								Name</th>
+							<th data-column-id="motherName" data-order="asc" data-align="left" data-header-css-class="column" data-header-align="left" data-width="14%">Mother's
+								Name</th>
+							<th data-column-id="mobile" data-type="numeric" data-order="asc" data-align="left" data-header-css-class="column" data-header-align="left"
+								data-width="10%">Mobile</th>
+							<th data-column-id="commands" data-formatter="commands" data-header-css-class="column" data-sortable="false">Commands</th>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+				<div class="popup"></div>
+				<div id="divdeps" style="display: none;z-index:500" title="" class="popUp">
+
+					<div class="register span7">
+						<form action="" method="post" id="form">
+							<h2>
+								UPDATE <span class="red"><strong class="red">LOCALE!</strong></span>
+							</h2>
+							<label for="firstName">First Name</label> 
+							<input type="text" id="firstName" name="firstName" placeholder="Enter First name..."> 
+							<label for="lastName">Last Name</label> <input type="text" id="lastName" name="lastName" placeholder="Enter Last name..."> 
+							<label for="houseName">House Name</label> 
+							<input type="text" id="houseName" name="houseName" placeholder="Enter House name..."> 
+							<label for="fatherName">Father's Name</label> 
+							<input type="text" id="fatherName" name="fatherName" placeholder="Enter Father's name..."> 
+							<label for="motherName">Mother's Name</label> 
+							<input type="text" id="motherName" name="motherName" placeholder="Enter Mother's name..."> <label for="mobile">Mobile</label> <input type="text"
+								id="mobile" name="mobile" placeholder="Enter mobile number..." />
+							<button type="submit" id="submit">Update</button>
+							<button type="button" id="cancel">Cancel</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer id="footer"> © Copyright 2015-2016, ARUN PRATHEEP </footer>
+	<script src="js/modernizr-2.8.1.js"></script>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/jquery.bootgrid.js"></script>
+	<script src="js/jquery.bootgrid.fa.js"></script>
+	<script src="js/search.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="css/jquery.confirm/jquery.confirm.js"></script>
+</body>
+</html>
